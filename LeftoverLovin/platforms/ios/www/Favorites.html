@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="..\JavaScript\jquery\jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="..\JavaScript\jquery\jquery.mobile-1.4.5.min.js"></script>
+<script src="..\JavaScript\jquery\jquery-1.11.2.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+  <div data-role="panel" id="myPanel"> 
+    <h2>Menu</h2>
+	<a href="Fridge.html" rel="external" data-ajax="false" id="Settingslink" class="ui-shadow ui-btn ui-corner-all">Fridge</a>
+	<a href="Recipies.html" rel="external" data-ajax="false" id="Recipieslink" class="ui-shadow ui-btn ui-corner-all">Recipies</a>
+	<a href="Favorites.html" rel="external" data-ajax="false" id="Favoriteslink" class="ui-shadow ui-btn ui-corner-all">Favorites</a>
+  </div> 
+
+  <div data-role="header" style="overflow:hidden;">
+    <h1>Favorites</h1>
+	<a href="#myPanel" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-grid" >Menu</a>
+  </div>
+
+  <div data-role="main" class="ui-content">
+<ul id="listRecipies" data-role="listview" data-filter="true" data-filter-placholder="search recipies" data-inset="true">
+		<li><a href="#">Apple tart</a></li>
+</ul>
+  </div>
+
+  <div data-role="footer">
+    <h1>Leftover Lovin'</h1>
+  </div> 
+
+</body>
+</html>
