@@ -6,9 +6,18 @@
     <description>Seasoned chicken strips highlight this pasta salad tossed with tomatoes, chopped lettuce, mozzarella, and onion. Feel free to add your favorite garnishes</description>
     <mealTime>Supper</mealTime>
     <ingredients>
-      <ingredient>Chicken</ingredient>
-      <ingredient>Pasta</ingredient>
-      <ingredient>Salad</ingredient>
+      <ingredient>
+		<name>Chicken</name>
+		<quantity>1</quantity>
+	  </ingredient>
+      <ingredient>
+		<name>Pasta</name>
+		<quantity>1</quantity>
+	  </ingredient>
+      <ingredient>
+		<name>Salad</name>
+		<quantity>1</quantity>
+	  </ingredient>
     </ingredients>
     <preperarion>
       <step>Cook chicken</step>
@@ -27,9 +36,18 @@
     <description>The bunny is a traditional Durban fast food meal - this recipe gives it a gourmet twist by using prawns!</description>
     <mealTime>Supper</mealTime>
     <ingredients>
-      <ingredient>Oil</ingredient>
-      <ingredient>Onion</ingredient>
-      <ingredient>Garlic</ingredient>
+      <ingredient>
+		<name>Oil</name>
+		<quantity>1</quantity>
+	  </ingredient>
+      <ingredient>
+		<name>Garlic</name>
+		<quantity>1</quantity>
+	  </ingredient>
+      <ingredient>
+		<name>Onion</name>
+		<quantity>1</quantity>
+	  </ingredient>
     </ingredients>
     <preperarion>
       <step>Preheat oven to 180°C.</step>
@@ -55,9 +73,18 @@
 </description>
     <mealTime>Breakfast</mealTime>
     <ingredients>
-      <ingredient>Onion</ingredient>
-      <ingredient>Oil</ingredient>
-      <ingredient>Curry powder</ingredient>
+      <ingredient>
+		<name>Onion</name>
+		<quantity>1</quantity>
+	  </ingredient>
+      <ingredient>
+		<name>Oil</name>
+		<quantity>1</quantity>
+	  </ingredient>
+      <ingredient>
+		<name>Curry Powder</name>
+		<quantity>1</quantity>
+	  </ingredient>
     </ingredients>
     <preperarion>
       <step>catch lamb bunnies</step>
@@ -76,9 +103,18 @@
     <description></description>
     <mealTime></mealTime>
     <ingredients>
-      <ingredient></ingredient>
-      <ingredient></ingredient>
-      <ingredient></ingredient>
+      <ingredient>
+		<name></name>
+		<quantity></quantity>
+	  </ingredient>
+      <ingredient>
+		<name></name>
+		<quantity></quantity>
+	  </ingredient>
+      <ingredient>
+		<name></name>
+		<quantity></quantity>
+	  </ingredient>
     </ingredients>
     <preperarion>
       <step></step>
