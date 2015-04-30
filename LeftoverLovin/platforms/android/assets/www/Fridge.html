@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Leftover Lovin'</title>
+		<meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <!--<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+		-->
+		<meta name="viewport" content="user-scalable=no, width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi">
+		
 		<link rel="stylesheet" href="..\JavaScript\jquery\jquery.mobile-1.4.5.min.css">
 		<link rel="stylesheet" href="CSS\styles.css">
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
@@ -13,44 +22,46 @@
 	
 	<body id="bodyP">
 
-	<div data-role="panel" id="myPanel"> 
-		<h2>Menu</h2>
-		</br>
-		<a href="index.html" rel="external" data-ajax="false" id="indexlink" class="ui-shadow ui-btn ui-corner-all">Home</a>
-		</br>
-		<a href="Fridge.html" rel="external" data-ajax="false" id="Settingslink" class="ui-shadow ui-btn ui-corner-all">Fridge</a>
-		</br>
-		<a href="Recipies.html" rel="external" data-ajax="false" id="Recipieslink" class="ui-shadow ui-btn ui-corner-all">Recipies</a>
-		</br>
-		<a href="Favorites.html" rel="external" data-ajax="false" id="Favoriteslink" class="ui-shadow ui-btn ui-corner-all">Favorites</a>
-	</div> 
+		<div data-role="panel" id="myPanel"> 
+			<h2>Menu</h2>
+			</br>
+			<a href="index.html" rel="external" data-ajax="false" id="indexlink" class="ui-shadow ui-btn ui-corner-all">Home</a>
+			</br>
+			<a href="Fridge.html" rel="external" data-ajax="false" id="Settingslink" class="ui-shadow ui-btn ui-corner-all">Fridge</a>
+			</br>
+			<a href="Recipies.html" rel="external" data-ajax="false" id="Recipieslink" class="ui-shadow ui-btn ui-corner-all">Recipies</a>
+			</br>
+			<a href="Favorites.html" rel="external" data-ajax="false" id="Favoriteslink" class="ui-shadow ui-btn ui-corner-all">Favorites</a>
+		</div> 
 
-	<div data-role="header" style="overflow:hidden;" id="headerP">
-		<h1 id="homeH">Browse</h1>
-		<a href="#myPanel" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-grid" id="menuB">Menu</a>
-	</div>
-
-	<div data-role="main" class="ui-content" id="main">
-		<div id="fridgeadd">
-			<form method="post" action="">
-				<label for="fname"  id="main">Add Ingredient</label>
-				<input type="text" name="fname" id="foodadd">
-				<input  id="main" type="submit" value="Add"/>
-			</form>
+		<div data-role="header" style="overflow:hidden;" id="headerP">
+			<h1 id="homeH">Browse</h1>
+			<a href="#myPanel" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-grid" id="menuB">Menu</a>
 		</div>
 
-		<div id="fridgelist"  id="main">
-			<ul id="listRecipies" data-role="listview" data-filter="true" data-filter-placholder="search recipies" data-inset="true">
-				<li style="overflow:hidden;">Apple tart
-					<input type="button" data-icon="delete" data-iconpos="notext" value="Icon only">		
-				</li>			
-			</ul>
+		<div data-role="main" class="ui-content" id="main">
+			<div id="fridgeadd">
+				<form method="post" action="">
+					<label for="fname"  id="main">Add Ingredient</label>
+					<input type="text" name="fname" id="foodadd">
+					<input  id="main" type="submit" value="Add"/>
+				</form>
+			</div>
+
+			<div id="fridgelist"  id="main">
+				<ul id="listRecipies" data-role="listview" data-filter="true" data-filter-placholder="search recipies" data-inset="true">
+					<li style="overflow:hidden;">Apple tart
+						<input type="button" data-icon="delete" data-iconpos="notext" value="Icon only">		
+					</li>			
+				</ul>
+			</div>
 		</div>
-	</div>
 
-	<div data-role="footer" id="footerP">
-		<h1>Leftover Lovin'</h1>
-	</div> 
-
+		<div data-role="footer" id="footerP">
+			<h1>Leftover Lovin'</h1>
+		</div> 
+		<script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
 	</body>
+	
 </html>
