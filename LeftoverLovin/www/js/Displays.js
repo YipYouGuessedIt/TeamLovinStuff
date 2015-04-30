@@ -34,12 +34,13 @@ $(document).ready(function () {
             object.mealTime = $(this).find("mealTime").text();
             object.ingredients = ingredients;
             object.prep = prep;
-            object.rating = $(this).find("name").text()/$(this).find("name").text();
+            object.rating = ($(this).find("name").text())/($(this).find("name").text());
             recipes[i] = object;
+            i++;
         });
         
         //Call next function
-        DisplayRecipes(recipes);
+        DisplayRecipes(recipes, i);
         //$("#listRecipes").append("<li>pew</li>");
     }
 
@@ -53,9 +54,12 @@ $(document).ready(function () {
         //not needed right now
     }
 
-    function DisplayRecipes(RecipeList)
+    function DisplayRecipes(RecipeList, i)
     {
-        
+        for(var j = 0; j < i; j++)
+        {
+            $("#listRecipies").append("<li><a href='" + RecipeList[j].id + "'>" + RecipeList[j].name + "</a>");
+        }
     }
 
 });
