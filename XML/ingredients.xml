@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ingredients>
+	<ingredient id="1">
+		<name>Milk</name>
+	</ingredient>
+	
+	<ingredient id="2">
+		<name>Eggs</name>
+	</ingredient>
+	
+	<ingredient id="3">
+		<name>Flour</name>
+	</ingredient>
+</ingredients>
