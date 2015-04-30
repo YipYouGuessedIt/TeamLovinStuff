@@ -20,6 +20,8 @@ function ReadFavourites()
 
         success:function(xml){
             var object;
+			var recipes;
+			var k=0;
             $(xml).find("recipe").each(function () {
                 var ingredients;
                 $(this).find("ingredients").each(function () {
@@ -42,9 +44,11 @@ function ReadFavourites()
                 object.ingredients = ingredients;
                 object.prep = prep;
                 object.rating = $(this).find("score").text()
+				recipes[k]=object;
+				k++;
             });
 
-            DisplayRecipes(object);
+            DisplayRecipes(recipes);
         }
     });
 }
