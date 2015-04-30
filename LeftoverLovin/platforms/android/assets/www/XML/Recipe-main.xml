@@ -7,17 +7,17 @@
     <mealTime>Supper</mealTime>
     <ingredients>
       <ingredient>
-		<name>Chicken</name>
-		<quantity>1</quantity>
-	  </ingredient>
-      <ingredient>
-		<name>Pasta</name>
-		<quantity>1</quantity>
-	  </ingredient>
-      <ingredient>
-		<name>Salad</name>
-		<quantity>1</quantity>
-	  </ingredient>
+		  <name>Chicken</name>
+		  <quantity>1</quantity>
+	    </ingredient>
+        <ingredient>
+		  <name>Pasta</name>
+		  <quantity>1</quantity>
+	    </ingredient>
+        <ingredient>
+		  <name>Salad</name>
+		  <quantity>1</quantity>
+	    </ingredient>
     </ingredients>
     <preperarion>
       <step>Cook chicken</step>
