@@ -1,85 +1,92 @@
-$(document).ready(function () {
-    //var xmlDoc = $.parseXML("//XML/Recipe-main.xml");
-    //$xml = $(xmlDoc);
-    
 
-});
 
 function GetAllRecipes()
 {
-    var object;
-    var j;
-    $.ajax({
-        type: "GET",
-        url: "./XML/Recipe-main.xml",
-        dataType: "xml",
+    //var object = new Object;
+    //var j;
+    
+    //$.ajax({
+    //    type: "GET",
+    //    url: "../XML/Recipe-main.xml",
+    //    dataType: "xml",
 
-        success:function(xml){
-            
-            
-            $(xml).find("recipe").each(function () {
-                var ingredients;
-                $(this).find("ingredients").each(function () {
-                    var tempIngredient;
-                    tempIngredient.ingredient=$(this).find("ingredient").text();
-                    tempIngredient.quantity=$(this).find("quantity").text();
-                });
-                var i=0;
-                var prep;
-                $(this).find("ingredients").each(function () {
-                    prep[i]=$(this).find("step").text();
-                    i++;
-                });
+    //    success: function (xml)
+    //    {
+    //        //alert("fish");
+    //        $(xml).find("recipe").each(function ()
+    //        {
+    //            var ingredients;
+    //            $(this).find("ingredients").each(function () {
+    //                var tempIngredient = new Object();
+    //                tempIngredient.ingredient = $(this).find("ingredient").text();
+    //                tempIngredient.quantity = $(this).find("quantity").text();
+    //            });
+    //            var i=0;
+    //            var prep = new Object();
+    //            $(this).find("ingredients").each(function () {
+    //                prep[i] = $(this).find("step").text();
+    //                i++;
+    //            });
 
-                object.id = $(this).attr("id").text();
-                object.name = $(this).find("name").text();
-                object.image = $(this).find("imageLink").text();
-                object.description = $(this).find("description").text();
-                object.mealTime = $(this).find("mealTime").text();
-                object.ingredients = ingredients;
-                object.ingredientCount = i;
-                object.prep = prep;
-                object.rating = $(this).find("score").text();
-                j++;
-            });
+    //            object.id = $(this).attr("id");
+    //            object.name = $(this).find("name").text();
+    //            object.image = $(this).find("imageLink").text();
+    //            object.description = $(this).find("description").text();
+    //            object.mealTime = $(this).find("mealTime").text();
+    //            object.ingredients = ingredients;
+    //            object.ingredientCount = i;
+    //            object.prep = prep;
+    //            object.rating = $(this).find("score").text();
+    //            j++;
+    //            alert(object.description);
+    //        });
+    //        DisplayRecipes(object, j);
+    //    },
+    //    error: function () { alert("pew"); }
+    //});
 
-            DisplayRecipes(object,j);
-        }
-    });
-	//var recipes;
-	//var i = 0;
-	//$xml = $( $.parseXML(../XML/Recipe-main.xml));
-	//$xml.find("recipe").each(function()
-	//{
-	//	//get all ingredients
-	//	var ingredients;
-	//	$(this).find("ingredients").each(function()
-	//	{
-	//		var ingredientTemp;
-	//		ingredientTemp.ingredient = $(this).find("ingredient").text();
-	//		ingredientTemp.quantity = $(this).find("quantity").text();
-	//		ingredients[i] = ingredientTemp;
-	//	});
 
-	//	//get all preperation steps
-	//	var prep;
-	//	$(this).find("ingredients").each(function()
-	//	{
-	//		prep[i] = $(this).find("step").text();
-	//	});
+	var recipes;
+	var i = 0;
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.open("GET", "Recipes-main.xml", false);
+    xmlhttp.setRequestHeader("Access-Control-Allow-Origin", "*");
+    xmlhttp.setRequestHeader("Access-Control-Allow-Headers", "*");
+	xmlhttp.send();
+	var xmlDoc = xmlhttp.responseXML;
+	var xml = $.parseXML(xmlDoc);
 
-	//	//build objects
-	//	var object;
-	//	object.id = $(this).attr("id").text();
-	//	object.name = $(this).find("name").text();
-	//	object.image = $(this).find("imageLink").text();
-	//	object.description = $(this).find("description").text();
-	//	object.mealTime = $(this).find("mealTime").text();
-	//	object.ingredients = ingredients;
-	//	object.prep = prep;
-	//	object.rating = ($(this).find("name").text())/($(this).find("name").text());
-	//	recipes[i] = object;
-	//	i++;
+	xml.find("recipe").each(function()
+	{
+		//get all ingredients
+		var ingredients;
+		$(this).find("ingredients").each(function()
+		{
+			var ingredientTemp;
+			ingredientTemp.ingredient = $(this).find("ingredient").text();
+			ingredientTemp.quantity = $(this).find("quantity").text();
+			ingredients[i] = ingredientTemp;
+		});
+
+		//get all preperation steps
+		var prep;
+		$(this).find("ingredients").each(function()
+		{
+			prep[i] = $(this).find("step").text();
+		});
+
+		//build objects
+		var object;
+		object.id = $(this).attr("id").text();
+		object.name = $(this).find("name").text();
+		object.image = $(this).find("imageLink").text();
+		object.description = $(this).find("description").text();
+		object.mealTime = $(this).find("mealTime").text();
+		object.ingredients = ingredients;
+		object.prep = prep;
+		object.rating = ($(this).find("name").text())/($(this).find("name").text());
+		recipes[i] = object;
+		i++;
 	});
 	
 	//Call next function
