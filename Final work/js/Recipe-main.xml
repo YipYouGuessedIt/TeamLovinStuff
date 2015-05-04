@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Recipes>
+	<recipe id="1">
+		<name>Grilled Chicken and Pasta Salad</name>
+    <imageLink>874033.jpg</imageLink>
+    <description>Seasoned chicken strips highlight this pasta salad tossed with tomatoes, chopped lettuce, mozzarella, and onion. Feel free to add your favorite garnishes</description>
+    <mealTime>Supper</mealTime>
+    <ingredients>
+      <ingredient>
+		  <name>Chicken</name>
+		  <quantity>1</quantity>
+	    </ingredient>
+        <ingredient>
+		  <name>Pasta</name>
+		  <quantity>1</quantity>
+	    </ingredient>
+        <ingredient>
+		  <name>Salad</name>
+		  <quantity>1</quantity>
+	    </ingredient>
+    </ingredients>
+    <preperarion>
+      <step>Cook chicken</step>
+      <step>Add lettuce</step>
+      <step>mix</step>
+    </preperarion>
+    <rating>
+      <score>192</score>
+      <votes>60</votes>
+    </rating>
+	</recipe>
+
+	<recipe id="2">
+		<name>Gourmet Prawn Bunny Chows</name>
+    <imageLink>Gourmet Prawn Bunny Chows_30_1.1.832_326X580.Jpeg</imageLink>
+    <description>The bunny is a traditional Durban fast food meal - this recipe gives it a gourmet twist by using prawns!</description>
+    <mealTime>Supper</mealTime>
+    <ingredients>
+      <ingredient>
+		<name>Oil</name>
+		<quantity>1</quantity>
+	  </ingredient>
+      <ingredient>
+		<name>Garlic</name>
+		<quantity>1</quantity>
+	  </ingredient>
+      <ingredient>
+		<name>Onion</name>
+		<quantity>1</quantity>
+	  </ingredient>
+    </ingredients>
+    <preperarion>
+      <step>Preheat oven to 180°C.</step>
+      <step>Place desiccated coconut on an oven tray and lightly toast in a preheated oven for 5 minutes until golden brown then set aside.</step>
+      <step>Heat oil in a large pan and gently sauté the onions and garlic until soft.</step>
+      <step>Stir in the grated tomatoes and allow to cook for 5 minutes.</step>
+      <step>Stir in the sachet of KNORR Mild Durban Curry Cook-in-Sauce and allow to cook for 2 minutes stirring continuously.</step>
+      <step>Add the chickpeas, plain yoghurt and water and allow to simmer for 5 minutes so that the sauce can thicken.</step>
+      <step>Add the peeled prawns, stir well and allow to cook on a low heat for a further 8 minutes.</step>
+      <step>Remove from heat and stir through the fresh coriander.</step>
+      <step>Spoon prawn filling into the hollowed out bread rolls and garnish with toasted coconut and sprigs of fresh coriander.</step>
+    </preperarion>
+    <rating>
+      <score>120</score>
+      <votes>30</votes>
+    </rating>
+	</recipe>
+
+	<recipe id="3">
+		<name>Tasty Mutton, Pea and Potato Curry</name>
+    <imageLink>Tasty Mutton_30_1.1.131_326X580_30_1.1.131_326X580.Jpeg</imageLink>
+    <description>This is a quick and easy way to make a mild curry for family and friends.
+</description>
+    <mealTime>Breakfast</mealTime>
+    <ingredients>
+      <ingredient>
+		<name>Onion</name>
+		<quantity>1</quantity>
+	  </ingredient>
+      <ingredient>
+		<name>Oil</name>
+		<quantity>1</quantity>
+	  </ingredient>
+      <ingredient>
+		<name>Curry Powder</name>
+		<quantity>1</quantity>
+	  </ingredient>
+    </ingredients>
+    <preperarion>
+      <step>catch lamb bunnies</step>
+      <step>laugh at the funnies</step>
+      <step>You should stop taking drugs</step>
+    </preperarion>
+    <rating>
+      <score>240</score>
+      <votes>60</votes>
+    </rating>
+	</recipe>
+
+	<recipe id="4">
+		<name></name>
+    <imageLink></imageLink>
+    <description></description>
+    <mealTime></mealTime>
+    <ingredients>
+      <ingredient>
+		<name></name>
+		<quantity></quantity>
+	  </ingredient>
+      <ingredient>
+		<name></name>
+		<quantity></quantity>
+	  </ingredient>
+      <ingredient>
+		<name></name>
+		<quantity></quantity>
+	  </ingredient>
+    </ingredients>
+    <preperarion>
+      <step></step>
+      <step></step>
+      <step></step>
+    </preperarion>
+    <rating>
+      <score></score>
+      <votes></votes>
+    </rating>
+	</recipe>
+</Recipes>
