@@ -1,0 +1,148 @@
+#bodyP, body
+{
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+	overflow: scroll;
+	background:#444444 url("images/922389-yummy-food-wallpaper.jpg") 70% 60% repeat-x;
+	font-size:x-large;
+}
+
+#myPanel
+{
+	background-image:url("images/pies.jpg");	
+	border-width: 3px;
+	border-radius: 30px;
+	color: black;
+}
+
+#homeH
+{
+	background:url("images/pies4.jpg") 70% 50% repeat-x;
+	font-weight: bold;
+	margin: auto;
+	font-family: Dotum;
+	text-align: center;
+	font-size:150%;
+	color: white;
+	
+	/*opacity: 0.8;*/
+}
+
+.main
+{
+	font-size:150%;
+}
+
+h1
+{
+	font-weight: bold;
+	margin: auto;
+	font-family: Dotum;
+	text-align: center;
+	
+	font-size:150%;
+}
+
+h2
+{
+	font-weight: bold;
+	margin: auto;
+	font-family: Dotum;
+	text-align: center;
+	color: white;
+	
+	font-size:150%;
+}
+
+#headerP
+{
+	background:#444444;	
+	border-width: 3px;
+	border-radius: 30px;
+	border-color: rgba(195,195,195,1);
+}
+
+#footerP
+{
+	background-color: grey;
+	border-color: rgba(195,195,195,1);
+	border-width: 3px;
+	border-radius: 30px;
+	font-size: 20pt;
+	color: white;
+	position: relative;
+	width: 100%;
+	bottom: 10%;
+}
+
+#footerPH
+{
+	background-color: grey;
+	border-color: rgba(195,195,195,1);
+	border-width: 3px;
+	border-radius: 30px;
+	font-size: 20pt;
+	color: white;
+	position: absolute;
+	width: 100%;
+}
+
+#menuB
+{
+	margin-right: 13px;
+	top: 28px;
+	border-width: 2px;
+	border-radius: 30px;
+	margin: auto;
+}
+
+.menuF
+{
+	border-width: 2px;
+	border-radius: 30px;
+	margin: auto;
+}
+
+.font
+{
+	font-size: 20pt;
+}
+
+#mainD
+{
+	margin: 0 auto;
+	position: relative;
+	height: 95%;
+	width: 100%;
+	text-align: center;
+	background:white url("images/back4.jpg");
+	background-attachment: fixed;
+	overflow: hidden;
+	border-width: 2px;
+	border-radius: 30px;
+}
+
+#imgLogo
+{
+	bottom: 50%;
+	position: relative;
+	float: center;
+	margin: 0 auto;
+}
+
+#start
+{
+	top: 55%;
+}
+
+.spin
+{
+	-webkit-animation:spin 10s linear infinite;
+	-moz-animation:spin 10s linear infinite;
+	animation:spin 10s linear infinite
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
