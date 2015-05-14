@@ -8,4 +8,6 @@
 			<a href="Recipies.php" rel="external" data-ajax="false" id="Recipieslink" class="ui-shadow ui-btn ui-corner-all">Recipes</a>
 			</br>
 			<a href="Favorites.php" rel="external" data-ajax="false" id="Favoriteslink" class="ui-shadow ui-btn ui-corner-all">Favorites</a>	
+			</br>
+			<a href="AllRecipes.php" rel="external" data-ajax="false" id="AllRecipeslink" class="ui-shadow ui-btn ui-corner-all">All Recipes</a>	
 		</div> 
