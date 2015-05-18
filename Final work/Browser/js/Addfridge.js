@@ -2,7 +2,7 @@
 $(document).ready(function()
 {
 $('input[name=adder]').click(function (e){
-			var m = {"Name":$('input[name=fname]').val()};
+			var m = {"Name":$('input[name=fname]').val(),"Unit":$('select[name=unit]').val(),"Ama":$('input[name=amount]').val()};
 	var strin = JSON.stringify(m);
 	//alert(strin);
 	$.ajax({

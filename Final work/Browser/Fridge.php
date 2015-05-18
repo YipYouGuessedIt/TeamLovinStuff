@@ -16,7 +16,6 @@
 	</head>
 	
 	<body id="bodyP">
-
 		<?php include('panel.php'); ?>
 
 		<div data-role="header" style="overflow:hidden;" id="headerP">
@@ -28,7 +27,12 @@
 			<div id="fridgeadd">
 				
 					<h1  id="main">Add Ingredient</h1>
-					<input type="text" name="fname" id="foodadd">
+					<input type="text" name="fname" placeholder="Name of item eg 'Cheese'" id="foodadd">
+					<select name = "unit">
+					<option>Grams</option>
+					<option>Millilitres</option>
+					</select>
+					<input type="number" name="amount" placeholder="Quantity of items eg '400'" id="foodadd2">
 					<input  id="main"  name="adder" type="submit" value="Add"/>
 				
 			</div>
@@ -41,7 +45,7 @@
 			if($count > 0)
 			{
 				while($row = mysql_fetch_array($result)){
-					echo "<li><a href='' class='main'>".$row["Name"]."</a></li>";
+					echo "<li><a href='' class='main'>".$row["Name"]."(" .$row["Quantity"]. " " .$row["Qtype"]. ")</a></li>";
 				}
 			}
 			

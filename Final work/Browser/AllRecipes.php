@@ -28,7 +28,7 @@
 			$count = mysql_num_rows($result);
 			if($count > 0)
 			{
-				while($row = mysql_fetch_array($result)){
+			while($row = mysql_fetch_array($result)){
 			$result2 = mysql_query("SELECT * FROM `recipes` WHERE `ID` = ".$row["RecipeID"]."");
 			$count2 = mysql_num_rows($result2);
 			if($count2 > 0)

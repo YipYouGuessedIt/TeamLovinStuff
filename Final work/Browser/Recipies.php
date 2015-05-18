@@ -25,7 +25,6 @@
 
 		<div data-role="main" class="ui-content" id="main">
 			<ul id="main" id="listRecipies" data-role="listview" data-filter="true" data-filter-placholder="search recipies" data-inset="true">
-			<li><a href="#" id="">Apple tart</a></li>
 			<?php 
 			$result = mysql_query("SELECT * FROM recipes");
 			$count = mysql_num_rows($result);
@@ -37,22 +36,35 @@
 			$count2 = mysql_num_rows($result2);
 			if($count2 > 0)
 			{
+				$c2 = 0;
 				while($row2 = mysql_fetch_array($result2)){
 					//echo $row2["Name"];
-					if(strpos(strtolower($row["Ingredients"]),(strtolower($row2["Name"]))) != false)
+					$array = explode(',',$row["Ingredients"]);
+				
+				$num = count($array)-1;
+				$c = $num+1;
+				
+				while($num >= 0)
+				{
+					$sArray = explode('$',$array[$num]);
+					$num = $num-1;
+					if(strtolower($row2["Name"]) == strtolower($sArray[0]))
 					{
+						$c2 = $c2 + 1;
 						
-						$cont = false;
 					}
 				}
-			}
 					
-					
-					if($cont == false)
+				}
+				if($c == $c2)
 					{
 					echo "<li><a href='' class='main' id='".$row["ID"]."'>".$row["Name"]."</a></li>";
 				
+					}
 			}
+					
+					
+					
 				}
 			}
 			

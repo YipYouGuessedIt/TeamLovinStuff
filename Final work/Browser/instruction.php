@@ -11,6 +11,7 @@
 		-->
 		<meta name="viewport" content="user-scalable=no, width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi">
  <?php include('stuff.php'); ?>
+     <script type="text/javascript" src="./js/cooked.js"></script>
      <script type="text/javascript" src="./js/fav.js"></script>
 	</head>
 	
@@ -53,13 +54,19 @@ include('panel.php'); ?>
 			<div id="listing">
 				<h3>Ingredients</h3>
 				<ul id="listIngredients" data-role="listview">
-				<?php $array = explode(',',$row["Ingredients"]);
+				<?php 
+				$array = explode(',',$row["Ingredients"]);
 				
 				$num = count($array)-1;
+				$foodname =array();
+				$foodquantity = array();
 				while($num >= 0)
 				{
-					echo "<li>".$array[$num]."</li>";
+					$sArray = explode('$',$array[$num]);
+					echo "<li>".$sArray[0]."( ".$sArray[2]." ".$sArray[1].")</li>";
 					$num = $num-1;
+					$foodname[$num] = $sArray[0];
+					$foodquantity[$num] = $sArray[1];
 				}
 				?>
 
@@ -82,7 +89,12 @@ include('panel.php'); ?>
 				</ul>
 			</div>
 			</ul>
+				<div id="cookedd">
+					<input  id="main"  name="cooked" type="submit" value="Cooked the meal"/>
+				</div>
 		</div>
+		
+
 
 		<div data-role="footer" id="footerP">
 			<h1>Leftover Lovin'</h1>
