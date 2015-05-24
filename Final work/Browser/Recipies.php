@@ -20,7 +20,7 @@
 
 		<div data-role="header" style="overflow:hidden;" id="headerP">
 			<h1 id="homeH">Recipies</h1>
-			<a href="#myPanel" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-grid" id="menuB">Menu</a>
+			<a href="#myPanel" title="Click to display options" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-grid" id="menuB">Menu</a>
 		</div>
 
 		<div data-role="main" class="ui-content" id="main">
@@ -58,7 +58,7 @@
 				}
 				if($c == $c2)
 					{
-					echo "<li><a href='' class='main' id='".$row["ID"]."'>".$row["Name"]."</a></li>";
+					echo "<li><a href='' title='Click to display the desired recipe'  class='main' id='".$row["ID"]."'>".$row["Name"]."</a></li>";
 				
 					}
 			}

@@ -36,7 +36,7 @@ include('panel.php'); ?>
 
 		<div data-role="header" style="overflow:hidden;" id="headerP">
 			<h1  id="homeH">Recipe</h1>
-			<a href="#myPanel" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-grid"  id="menuB">Menu</a>
+			<a href="#myPanel" title="Click to display options"  class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-grid"  id="menuB">Menu</a>
 			<a href="" id=<?php echo "'".$row["ID"]."'" ?> class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-heart" name="moop"  style="border-width: 2px; border-radius: 30px; margin: auto; 	margin-right: 13px; height:15px; width:5px; top: 28px;"></a>
 		</div>
 		
@@ -90,7 +90,7 @@ include('panel.php'); ?>
 			</div>
 			</ul>
 				<div id="cookedd">
-					<input  id="main"  name="cooked" type="submit" value="Cooked the meal"/>
+					<input  id="main"  name="cooked" type="submit" title="Remove ingredients from fridge." value="Cooked the meal"/>
 				</div>
 		</div>
 		

@@ -20,20 +20,20 @@
 
 		<div data-role="header" style="overflow:hidden;" id="headerP">
 			<h1 id="homeH">Browse</h1>
-			<a href="#myPanel" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-grid" id="menuB">Menu</a>
+			<a href="#myPanel" title="Click to display options" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-grid" id="menuB">Menu</a>
 		</div>
 
 		<div data-role="main" class="ui-content" id="main">
 			<div id="fridgeadd">
 				
 					<h1  id="main">Add Ingredient</h1>
-					<input type="text" name="fname" placeholder="Name of item eg 'Cheese'" id="foodadd">
-					<select name = "unit">
-					<option>Grams</option>
-					<option>Millilitres</option>
-					</select>
-					<input type="number" name="amount" placeholder="Quantity of items eg '400'" id="foodadd2">
-					<input  id="main"  name="adder" type="submit" value="Add"/>
+					<input type="text" name="fname" placeholder="Name of item eg 'Cheese'" id="foodadd"/>
+					<input type="number" name="amount" placeholder="Quantity of items eg '400'" id="foodadd2"/>
+					<select name = "unit" title='Choose unit of measurement.'>
+						<option>Grams</option>
+						<option>Millilitres</option>
+					</select>					
+					<input  id="main"  name="adder" title='Click to add the desired ingredient.'  type="submit" value="Add"/>
 				
 			</div>
 
@@ -45,7 +45,7 @@
 			if($count > 0)
 			{
 				while($row = mysql_fetch_array($result)){
-					echo "<li><a href='' class='main'>".$row["Name"]."(" .$row["Quantity"]. " " .$row["Qtype"]. ")</a></li>";
+					echo "<li><a href='' class='main'>".$row["Name"]." (" .$row["Quantity"]. " " .$row["Qtype"]. ")</a></li>";
 				}
 			}
 			

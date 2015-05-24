@@ -34,12 +34,12 @@
 
 		<div data-role="header" style="overflow:hidden;" id="headerP">
 			<h1 id="homeH">Home</h1>
-			<a href="#myPanel" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-grid" id="menuB">Menu</a>
+			<a href="#myPanel" title="Click to display options" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-grid" id="menuB">Menu</a>
 		</div>
 
 		<div data-role="main" class="ui-content" id="mainD">
-			<img id="imgLogo" src="CSS\images\pizza-b.png" alt="logo.jpeg" class="spin"/><br/>
-			<a href="#myPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow" class="font">start cooking</a>
+			<img id="imgLogo" src="CSS/images/pizza-b.png" alt="logo.jpeg" class="spin"/><br/>
+			<a href="#myPanel" title="Click to display options" class="ui-btn ui-btn-inline ui-corner-all ui-shadow" class="font">start cooking</a>
 		</div>
 
 		<div data-role="footer" id="footerPH">
