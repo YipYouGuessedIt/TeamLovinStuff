@@ -8,18 +8,18 @@
 	font-size:x-large;
 }
 ::-webkit-input-placeholder { /* WebKit browsers */
-    color:    #909;
+    color:    #808080;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color:    #909;
+   color:    #808080;
    opacity:  1;
 }
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color:    #909;
+   color:    #808080;
    opacity:  1;
 }
 :-ms-input-placeholder { /* Internet Explorer 10+ */
-   color:    #909;
+   color:    #808080;
 }
 
 li
